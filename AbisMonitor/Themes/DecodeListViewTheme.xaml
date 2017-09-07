@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:converters="clr-namespace:AbisMonitor.UI.Converters">
+    <converters:HighlightIETitleConverter x:Key="HighlightIETitleConverter" />
+    <Style TargetType="ListViewItem" x:Key="RawDataStyle">
+        <Setter Property="HorizontalContentAlignment" Value="Stretch" />
+        <Setter Property="BorderBrush" Value="LightGray" />
+        <Setter Property="BorderThickness" Value="1" />
+        <Setter Property="Foreground"
+                                Value="{Binding Converter={StaticResource HighlightIETitleConverter}, ConverterParameter=Fore }" />
+        <Setter Property="Background"
+                                Value="{Binding Converter={StaticResource HighlightIETitleConverter}, ConverterParameter=Back }" />
+        <Style.Triggers>
+            <Trigger Property="IsSelected" Value="True">
+                <Setter Property="Foreground" Value="Black"></Setter>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Foreground" Value="Black"></Setter>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

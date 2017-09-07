@@ -1,0 +1,10 @@
+G:\Work\LjClientFramework\ClientSocketEngine\obj\Debug\ClientSocketEngine.csprojResolveAssemblyReference.cache
+G:\Work\LjClientFramework\ClientSocketEngine\bin\Debug\ClientSocketEngine.dll
+G:\Work\LjClientFramework\ClientSocketEngine\bin\Debug\ClientSocketEngine.pdb
+G:\Work\LjClientFramework\ClientSocketEngine\obj\Debug\ClientSocketEngine.dll
+G:\Work\LjClientFramework\ClientSocketEngine\obj\Debug\ClientSocketEngine.pdb
+G:\Work\AbisMonitor\AbisMonitor\ClientSocketEngine\bin\Debug\ClientSocketEngine.dll
+G:\Work\AbisMonitor\AbisMonitor\ClientSocketEngine\bin\Debug\ClientSocketEngine.pdb
+G:\Work\AbisMonitor\AbisMonitor\ClientSocketEngine\obj\Debug\ClientSocketEngine.dll
+G:\Work\AbisMonitor\AbisMonitor\ClientSocketEngine\obj\Debug\ClientSocketEngine.pdb
+G:\Work\AbisMonitor\AbisMonitor\ClientSocketEngine\obj\Debug\ClientSocketEngine.csprojResolveAssemblyReference.cache

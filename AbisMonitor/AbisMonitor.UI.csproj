@@ -1,0 +1,398 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{753D5E82-5C60-489B-9885-F60C02BC66EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>AbisMonitor.UI</RootNamespace>
+    <AssemblyName>AbisMonitor.UI</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="GalaSoft.MvvmLight, Version=5.3.0.19038, Culture=neutral, PublicKeyToken=0e453835af4ee6ce, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\GalaSoft.MvvmLight.dll</HintPath>
+    </Reference>
+    <Reference Include="GalaSoft.MvvmLight.Extras, Version=5.3.0.19026, Culture=neutral, PublicKeyToken=f46ff315b1088208, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\GalaSoft.MvvmLight.Extras.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation, Version=1.3.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\CommonServiceLocator.1.3\lib\portable-net4+sl5+netcore45+wpa81+wp8\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Windows.Shell, Version=3.5.41019.1, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\ModernUI.WPF.1.0.9\lib\net40\Microsoft.Windows.Shell.dll</HintPath>
+    </Reference>
+    <Reference Include="MvvmDialogs, Version=4.0.10.0, Culture=neutral, PublicKeyToken=3d3b9708589bc73e, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmDialogs.4.0.10\lib\net40\MvvmDialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Interactivity, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MvvmLightLibs.5.3.0.0\lib\net40\System.Windows.Interactivity.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="Xceed.Wpf.DataGrid, Version=3.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.1\lib\net40\Xceed.Wpf.DataGrid.dll</HintPath>
+    </Reference>
+    <Reference Include="Xceed.Wpf.Toolkit, Version=3.1.0.0, Culture=neutral, PublicKeyToken=3e4669d2f30244f4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Extended.Wpf.Toolkit.3.1\lib\net40\Xceed.Wpf.Toolkit.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Common\Controls\LoadingWait.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Common\Controls\PagerControl\PagerControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Common\Controls\TimeSelectControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Common\Controls\ImageButton\ImageButtonGeneric.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\AllSignalQuery.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\DeviceInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\DeviceTrack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\EngineIdTrack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Controls\IMSITrack.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\ButtonTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\ColorTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\DataGridTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\DecodeListViewTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\ExcelExportTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\FontCommon.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\MainUserControlTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\MainWindowTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\QueryParamUserControlTheme.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Themes\TabControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClientSocket\BufferQueue.cs" />
+    <Compile Include="ClientSocket\Client.cs" />
+    <Compile Include="ClientSocket\DefaultParseEnginer.cs" />
+    <Compile Include="ClientSocket\IParseEngine.cs" />
+    <Compile Include="ClientSocket\ParseFactory.cs" />
+    <Compile Include="ClientSocket\TryParse\ITryParse.cs" />
+    <Compile Include="ClientSocket\TryParse\SignalMonitorParse.cs" />
+    <Compile Include="ClientSocket\TryParse\SignalOtherMonitorParse.cs" />
+    <Compile Include="ClientSocket\TryParse\UserIdParse.cs" />
+    <Compile Include="ClientSocket\TryParse\UserTracedParse.cs" />
+    <Compile Include="Common\Controls\LoadingWait.xaml.cs">
+      <DependentUpon>LoadingWait.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Controls\NumberTextBox.cs" />
+    <Compile Include="Common\Controls\PagerControl\PageLineCountSelectValueConverter.cs" />
+    <Compile Include="Common\Controls\PagerControl\PageNumConvert.cs" />
+    <Compile Include="Common\Controls\PagerControl\PagerControl.xaml.cs">
+      <DependentUpon>PagerControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Controls\PagerControl\PagerControlViewModel.cs" />
+    <Compile Include="Common\Controls\TimeSelectControl.xaml.cs">
+      <DependentUpon>TimeSelectControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Controls\ImageButton\ImageButton.cs" />
+    <Compile Include="Common\Exceptions\ValidateExceptionArgs.cs" />
+    <Compile Include="ViewModels\AllSignalViewModel.cs" />
+    <Compile Include="ViewModels\Monitor\AllSignalMonitor.cs" />
+    <Compile Include="ViewModels\Monitor\IMonitorManager.cs" />
+    <Compile Include="ViewModels\Monitor\MonitorState.cs" />
+    <Compile Include="ViewModels\Monitor\QueueManager.cs" />
+    <Compile Include="Views\Controls\AllSignalQuery.xaml.cs">
+      <DependentUpon>AllSignalQuery.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\DeviceInfo.xaml.cs">
+      <DependentUpon>DeviceInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\DeviceTrack.xaml.cs">
+      <DependentUpon>DeviceTrack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\EngineIdTrack.xaml.cs">
+      <DependentUpon>EngineIdTrack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Controls\IMSITrack.xaml.cs">
+      <DependentUpon>IMSITrack.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Converters\ConnectedStateConverter.cs" />
+    <Compile Include="Converters\DataContentConverter.cs" />
+    <Compile Include="Converters\DateTimeFormatConvert.cs" />
+    <Compile Include="Converters\ExportConverter.cs" />
+    <Compile Include="Converters\HighlightIETitleConverter.cs" />
+    <Compile Include="Messager\DeviceTrackModelChangedMessage.cs" />
+    <Compile Include="Messager\UserControlSelectChangedMessage.cs" />
+    <Compile Include="Models\Cell.cs" />
+    <Compile Include="Models\Device.cs" />
+    <Compile Include="Models\MonitorModel.cs" />
+    <Compile Include="Models\Node.cs" />
+    <Compile Include="Models\Port.cs" />
+    <Compile Include="Models\TabItemModel.cs" />
+    <Compile Include="Utils\CommandExtension.cs" />
+    <Compile Include="Utils\RelayCommand.cs" />
+    <Compile Include="Utils\TabControlExtension.cs" />
+    <Compile Include="Utils\TreeViewControlExtension.cs" />
+    <Compile Include="Utils\WindowTool.cs" />
+    <Compile Include="ViewModels\AboutViewModel.cs" />
+    <Compile Include="ViewModels\BaseParamViewModel.cs" />
+    <Compile Include="ViewModels\DataTimeParamViewModel.cs" />
+    <Compile Include="ViewModels\DeviceNavigationViewModel.cs" />
+    <Compile Include="ViewModels\DeviceTrackViewModel.cs" />
+    <Compile Include="ViewModels\MainViewModel.cs" />
+    <Compile Include="ViewModels\BaseViewModel.cs" />
+    <Compile Include="ViewModels\Monitor\QueueViewModel.cs" />
+    <Compile Include="ViewModels\QueryViewModelCommandable.cs" />
+    <Compile Include="ViewModels\TabItemViewModel.cs" />
+    <Compile Include="Views\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\AbisMonitor.Domain\AbisMonitor.Domain.csproj">
+      <Project>{BE1F053F-D36A-415E-87CB-79F1A6555674}</Project>
+      <Name>AbisMonitor.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AbisMonitor.Service\AbisMonitor.Service.csproj">
+      <Project>{762A8326-6CD1-45CF-923A-740F51E8466B}</Project>
+      <Name>AbisMonitor.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ClientSocketEngine\ClientSocketEngine.csproj">
+      <Project>{6ec6c709-fb67-454d-8638-f5d493282f72}</Project>
+      <Name>ClientSocketEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Domain\Common.Domain.csproj">
+      <Project>{928fc910-9ab8-4373-9af1-eac9461ee0b8}</Project>
+      <Name>Common.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common.Service\Common.Service.csproj">
+      <Project>{d0dd23b7-5584-461b-a99e-c8e93bda121f}</Project>
+      <Name>Common.Service</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Common.csproj">
+      <Project>{054748d7-d134-41ec-8035-d23c2a03875a}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Framework\Framework.csproj">
+      <Project>{cd010f74-3388-486f-9caa-01e99ab36f04}</Project>
+      <Name>Framework</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\Add_16x16.png" />
+    <Resource Include="Resources\Images\blue.png" />
+    <Resource Include="Resources\Images\BottomBarBackground.jpg" />
+    <Resource Include="Resources\Images\Complete16x16.png" />
+    <Resource Include="Resources\Images\DbArrow1.png" />
+    <Resource Include="Resources\Images\DbArrow2.png" />
+    <Resource Include="Resources\Images\DbArrow3.png" />
+    <Resource Include="Resources\Images\DbArrow4.png" />
+    <Resource Include="Resources\Images\Delete_16x16.png" />
+    <Resource Include="Resources\Images\Edit2_16x16.png" />
+    <Resource Include="Resources\Images\Edit_16x16.png" />
+    <Resource Include="Resources\Images\Error_16x16.png" />
+    <Resource Include="Resources\Images\export_16x16.png" />
+    <Resource Include="Resources\Images\export_24x24.png" />
+    <Resource Include="Resources\Images\import_16x16.png" />
+    <Resource Include="Resources\Images\information_16x16.png" />
+    <Resource Include="Resources\Images\Liujie.ico" />
+    <Resource Include="Resources\Images\loadPress_16x16.png" />
+    <Resource Include="Resources\Images\loadStop_16x16.png" />
+    <Resource Include="Resources\Images\Login\Closed_24x24.ico" />
+    <Resource Include="Resources\Images\Login\Close_24x24.ico" />
+    <Resource Include="Resources\Images\Login\login_button_bg.gif" />
+    <Resource Include="Resources\Images\Login\login_title_bg.png" />
+    <Resource Include="Resources\Images\Login\password_bg.gif" />
+    <Resource Include="Resources\Images\Login\UserLogin.png" />
+    <Resource Include="Resources\Images\Login\user_bg.gif" />
+    <Resource Include="Resources\Images\LOGO.png" />
+    <Resource Include="Resources\Images\logoBackground.jpg" />
+    <Resource Include="Resources\Images\new-16x16.png" />
+    <Resource Include="Resources\Images\open-16x16.png" />
+    <Resource Include="Resources\Images\pause2_16px.png" />
+    <Resource Include="Resources\Images\pause_16px.png" />
+    <Resource Include="Resources\Images\Question32.png" />
+    <Resource Include="Resources\Images\red.png" />
+    <Resource Include="Resources\Images\Reset_16x16.png" />
+    <Resource Include="Resources\Images\return_16x16.png" />
+    <Resource Include="Resources\Images\Runing16x16.png" />
+    <Resource Include="Resources\Images\Search16x16.png" />
+    <Resource Include="Resources\Images\startup_16px.png" />
+    <Resource Include="Resources\Images\statusBarBackground.jpg" />
+    <Resource Include="Resources\Images\Stop16x16.png" />
+    <Resource Include="Resources\Images\sync_24px.png" />
+    <Resource Include="Resources\Images\TimeCollect_16x16.png" />
+    <Resource Include="Resources\Images\Wait_16x16.png" />
+    <Resource Include="Resources\Images\yellow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Images\AbisRes\timeFrequency.png" />
+    <Resource Include="Resources\Images\AbisRes\CollectionPoint.png" />
+    <Resource Include="Resources\Images\AbisRes\DeviceTrack.png" />
+    <Resource Include="Resources\Images\AbisRes\NO.png" />
+    <Resource Include="Resources\Images\AbisRes\Communicator.png" />
+    <Resource Include="Resources\Images\AbisRes\Information.png" />
+    <Resource Include="Resources\Images\AbisRes\DeviceInfo.png" />
+    <Resource Include="Resources\Images\AbisRes\Monitor.png" />
+    <Resource Include="Resources\Images\AbisRes\AbisMonitor.ico" />
+    <Content Include="Resources\Images\AbisRes\AbisMonitor.rc2" />
+    <Resource Include="Resources\Images\AbisRes\AbisMonitorDoc.ico" />
+    <Resource Include="Resources\Images\AbisRes\bitmap1.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bitmap_n.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00001.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00002.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00003.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00004.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00005.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00006.bmp" />
+    <Resource Include="Resources\Images\AbisRes\bmp00007.bmp" />
+    <Resource Include="Resources\Images\AbisRes\cur00001.cur" />
+    <Resource Include="Resources\Images\AbisRes\cursor1.cur" />
+    <Resource Include="Resources\Images\AbisRes\ICO-1247.ICO" />
+    <Resource Include="Resources\Images\AbisRes\ICO-2337.ICO" />
+    <Resource Include="Resources\Images\AbisRes\ICO-2781.ICO" />
+    <Resource Include="Resources\Images\AbisRes\ico00001.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00002.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00003.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00004.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00005.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00006.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00007.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00008.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00009.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00010.ico" />
+    <Resource Include="Resources\Images\AbisRes\ico00011.ico" />
+    <Resource Include="Resources\Images\AbisRes\icon1.ico" />
+    <Resource Include="Resources\Images\AbisRes\icon2.ico" />
+    <Resource Include="Resources\Images\AbisRes\icon_use.ico" />
+    <Resource Include="Resources\Images\AbisRes\key.ico" />
+    <Resource Include="Resources\Images\AbisRes\MAINICON.ico" />
+    <Resource Include="Resources\Images\AbisRes\main_ico.ico" />
+    <Resource Include="Resources\Images\AbisRes\Query.ico" />
+    <Resource Include="Resources\Images\AbisRes\sousou.ico" />
+    <Resource Include="Resources\Images\AbisRes\toolbar1.bmp" />
+    <Resource Include="Resources\Images\AbisRes\toolbar_.bmp" />
+    <Resource Include="Resources\Images\AbisRes\toolbar_.ico" />
+    <Resource Include="Resources\Images\AbisRes\Train.bmp" />
+    <Resource Include="Resources\Images\AbisRes\搜.ico" />
+    <Resource Include="Resources\Images\AbisRes\无标题.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,12 @@
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\Log4net.xml
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\AbisMonitor.Domain.dll
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\AbisMonitor.Domain.pdb
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\Common.Domain.dll
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\Framework.dll
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\Newtonsoft.Json.dll
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\log4net.dll
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\Common.Domain.pdb
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\bin\Debug\Framework.pdb
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\obj\Debug\AbisMonitor.Domain.csprojResolveAssemblyReference.cache
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\obj\Debug\AbisMonitor.Domain.dll
+G:\Work\AbisMonitor\AbisMonitor\AbisMonitor.Domain\obj\Debug\AbisMonitor.Domain.pdb

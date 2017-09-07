@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="AbisMonitor.UI.Common.Controls.TimeSelectControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type Button}">
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0.5"></Setter>
+            <Setter Property="Opacity" Value="0.9"></Setter>
+            <Setter Property="Width" Value="72"></Setter>
+            <Setter Property="Height" Value="28"></Setter>
+        </Style>
+        <Style x:Key="TimeButtonTemplateStyle" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate>
+                        <Border x:Name="borderImg" >
+                            <Image x:Name="img" Source="pack://application:,,,/Resources/Images/TimeCollect_16x16.png" />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Button.IsMouseOver" Value="True">
+                                <Setter TargetName="borderImg"  Property="BorderBrush" Value="#379BFF"></Setter>
+                                <Setter TargetName="borderImg" Property="BorderThickness" Value="1"></Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        <Style TargetType="ListBoxItem">
+            <Setter Property="HorizontalContentAlignment" Value="Center"></Setter>
+        </Style>
+
+    </UserControl.Resources>
+    <Grid>
+
+        <Button x:Name="btnTime" Width="16" Height="16" 
+                Style="{StaticResource TimeButtonTemplateStyle}"
+                Click="BtnTime_OnClick"
+                MouseEnter="BtnTime_OnMouseEnter"
+                >
+        </Button>
+        <Popup x:Name="popupTime"  HorizontalAlignment="Left" 
+               PlacementTarget="{Binding ElementName=btnTime}" AllowsTransparency="True" IsOpen="False"
+               PopupAnimation="Scroll" StaysOpen="False" Placement="Bottom"
+               Closed="PopupTime_OnClosed"
+               >
+            <Border BorderBrush="Transparent" BorderThickness="0" 
+                Background="#FFFFFF">
+                <StackPanel Orientation="Vertical" Margin="0,1,0,3"
+                            VerticalAlignment="Center" HorizontalAlignment="Center">
+                    <ListBox  ItemsSource="{Binding Path=TimeSelectedList}"
+                              x:Name="lstTimeSelected"
+                              IsSelected="False"
+                              HorizontalContentAlignment="Center"
+                              
+                              SelectedValuePath="Key"  
+                              SelectionMode="Single"
+                              SelectedValue="{Binding TimeSelectedItemKey,Mode=TwoWay}">
+                        <ListBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock  Text="{Binding Vaule}"  HorizontalAlignment="Center"  Margin="7,2,7,2"/>
+                            </DataTemplate>
+                        </ListBox.ItemTemplate>
+                    </ListBox>
+                </StackPanel>
+            </Border>
+        </Popup>
+    </Grid>
+</UserControl>

@@ -1,0 +1,12 @@
+G:\Work\LjClientFramework\Common\obj\Debug\Common.csprojResolveAssemblyReference.cache
+G:\Work\LjClientFramework\Common\bin\Debug\Common.dll
+G:\Work\LjClientFramework\Common\bin\Debug\Common.pdb
+G:\Work\LjClientFramework\Common\obj\Debug\Common.dll
+G:\Work\LjClientFramework\Common\obj\Debug\Common.pdb
+G:\Work\AbisMonitor\AbisMonitor\Common\bin\Debug\Common.dll
+G:\Work\AbisMonitor\AbisMonitor\Common\bin\Debug\Common.pdb
+G:\Work\AbisMonitor\AbisMonitor\Common\bin\Debug\System.Net.Http.dll
+G:\Work\AbisMonitor\AbisMonitor\Common\bin\Debug\System.Net.Http.xml
+G:\Work\AbisMonitor\AbisMonitor\Common\bin\Debug\zh-Hans\System.Net.Http.resources.dll
+G:\Work\AbisMonitor\AbisMonitor\Common\obj\Debug\Common.dll
+G:\Work\AbisMonitor\AbisMonitor\Common\obj\Debug\Common.pdb
